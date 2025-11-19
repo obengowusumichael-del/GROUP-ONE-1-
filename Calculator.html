@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students calculator</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+    <h1>Student Grade calculator</h1>
+    <p>Enter scores for 3 subjects</p>
+    <form style="width: 200px; margin: auto; border: solid 1px padding 0 1em;" id="gradeform"></form>
+        <label for ="Maths">Maths</label>
+        <input id="Maths" type="number" min=0% max="100%" placeholder="0%-100%">
+        <label for ="English Language">English</label>
+        <input id="English" type="number" min=0% max="100%" placeholder="0%-100%">
+        <label for ="Science">science</label>
+        <input id="Science" type="number" min=0% max="100%" placeholder="0%-100%">
+    </form>
+    <section id="results" class="results" hidden>
+        <p><strong>Total:</strong><id="total"></id></p>
+        <p><strong>Average:</strong><id="average"></id></p>
+        <p><strong>Grade:</strong><id="grade"></id></p>
+        <p><strong>Remark:</strong><id="remark"></id></p> 
+        <button type="calculate" id="calculate" class="btn">calculate</button>
+                        <p id="message"></p> 
+    </section>
+    <script src="calculator.js"></script>
+</body>
+</html>
